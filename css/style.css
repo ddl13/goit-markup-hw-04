@@ -131,13 +131,24 @@ img {
   color: var(--secondary-color);
 }
 
-.site-nav .link.current {
+.link.current {
   color: var(--secondary-color);
 }
 
 .header-address {
+  align-items: center;
   display: flex;
   margin-left: auto;
+}
+
+.header-icon {
+  margin-right: 10px;
+  fill: var(--description-text-color);
+}
+
+.header-icon:hover,
+.header-icon:focus {
+  fill: var(--secondary-color);
 }
 
 .header-address .item + .item {
@@ -210,16 +221,80 @@ img {
   color: var(--secondary-color);
 }
 
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.social-media-link-footer {
+  /* padding: 12px; */
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-link-footer:hover,
+.social-media-link-footer:focus {
+  background-color: var(--secondary-color);
+}
+
+.social-media-icon-footer {
+  fill: var(--primary-color);
+}
+.join-us {
+  margin-left: 70px;
+}
+
+.join {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.social-media-list-footer {
+  margin-top: 20px;
+}
+
+/* .social-media-link:hover .social-media-icon,
+.social-media-link:focus .social-media-icon {
+  fill: var(--primary-color);
+} */
+
 /* main */
 /* hero page */
+
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-img.png);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .hero-page {
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: var(--primary-background-color);
+  /* background-color: var(--primary-background-color); */
   text-align: center;
 }
+
 .hero-header {
   width: 696px;
   margin: 0 auto;
@@ -258,6 +333,22 @@ img {
 
 .about-company-list .item:not(:last-child) {
   margin-right: 30px;
+}
+
+.advantages-icon-section {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-background-color);
+}
+
+.advantages-icon {
+  /* width: 70px;
+  height: 70px; */
 }
 
 .about-company .section-title {
@@ -321,6 +412,10 @@ img {
 .our-team-list .item {
   text-align: center;
   background-color: var(--primary-color);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-list .item:not(:last-child) {
@@ -343,6 +438,80 @@ img {
   font-size: 16px;
   line-height: 1.18;
 }
+
+.social-media-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.social-media-link {
+  /* padding: 12px; */
+  /* border-radius: 50px;
+  background-color: var(--secondary-color); */
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+  border-radius: 50px;
+  background-color: var(--secondary-color);
+}
+
+.social-media-icon {
+  fill: #afb1b8;
+}
+
+.social-media-link:hover .social-media-icon,
+.social-media-link:focus .social-media-icon {
+  fill: var(--primary-color);
+}
+
+/* Our clients */
+.our-clients .section-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients-list .item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.clients-list .item:hover,
+.clients-list .item:focus {
+  border: 1px solid var(--secondary-color);
+}
+.clients-icon:hover,
+.clients-icon:hover {
+  fill: var(--secondary-color);
+}
+
 /* portfolio */
 
 .portfolio-section p {
@@ -370,6 +539,16 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-characteristic {
@@ -405,4 +584,6 @@ img {
 .white-button:focus {
   color: var(--primary-color);
   background-color: var(--secondary-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
