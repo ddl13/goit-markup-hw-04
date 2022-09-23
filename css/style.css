@@ -146,16 +146,19 @@ img {
   fill: var(--description-text-color);
 }
 
-.header-icon:hover,
+.gmail-phone {
+  display: inline-block;
+}
+/* .header-icon:hover,
 .header-icon:focus {
   fill: var(--secondary-color);
-}
+} */
 
 .header-address .item + .item {
   margin-left: 50px;
 }
 
-.header-address .link {
+.header-address .header-link {
   color: inherit;
 
   font-weight: 500;
@@ -164,8 +167,9 @@ img {
   letter-spacing: 0.02em;
 }
 
-.header-address .link:hover,
-.header-address .link:focus {
+.header-link:hover,
+.header-link:focus {
+  fill: var(--secondary-color);
   color: var(--secondary-color);
 }
 
@@ -259,6 +263,7 @@ img {
 
 .social-media-list-footer {
   margin-top: 20px;
+  margin-bottom: 0;
 }
 
 /* .social-media-link:hover .social-media-icon,
@@ -422,9 +427,6 @@ img {
   margin-right: 30px;
 }
 
-.worker-photo {
-  margin-bottom: 30px;
-}
 .our-team h3 {
   margin-bottom: 10px;
 
@@ -434,23 +436,25 @@ img {
 }
 
 .worker-description {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
+}
+
+.team-characteristic {
+  margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .social-media-list {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   gap: 10px;
 }
 
 .social-media-link {
-  /* padding: 12px; */
-  /* border-radius: 50px;
-  background-color: var(--secondary-color); */
   display: flex;
   width: 44px;
   height: 44px;
@@ -492,25 +496,36 @@ img {
 .clients-list .item {
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .clients-icon {
   fill: #afb1b8;
 }
 
-.clients-list .item:hover,
+.clients-link {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-link:hover,
+.clients-link:hover:focus {
+  fill: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+/* .clients-list .item:hover,
 .clients-list .item:focus {
   border: 1px solid var(--secondary-color);
 }
 .clients-icon:hover,
 .clients-icon:hover {
   fill: var(--secondary-color);
-}
+} */
 
 /* portfolio */
 
