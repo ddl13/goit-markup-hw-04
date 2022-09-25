@@ -506,7 +506,7 @@ img {
 
 .clients-link {
   border: 1px solid #afb1b8;
-  color: var(--description-text-color);
+  color: #afb1b8;
   border-radius: 4px;
   display: flex;
   width: 100%;
@@ -520,15 +520,6 @@ img {
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
 }
-
-/* .clients-list .item:hover,
-.clients-list .item:focus {
-  border: 1px solid var(--secondary-color);
-}
-.clients-icon:hover,
-.clients-icon:hover {
-  fill: var(--secondary-color);
-} */
 
 /* portfolio */
 
